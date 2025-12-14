@@ -85,12 +85,31 @@ section h3 {
   color: #555;
 }
 
+/* participant styles */
 .participant {
-  background-color: #f0f8ff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #a5d6a7;
-  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* optional inner elements */
+.participant .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.participant .name {
+  font-weight: 600;
+  color: #1a237e;
+  line-height: 1;
 }
 
 .form-group {
